@@ -1,0 +1,19 @@
+
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 New Pokemon
+        form(method="POST" action="/update-cobj")
+            label(for="name") Name:
+            input(type="text" name="name" id="name")
+            label(for="weight") Weight:
+            input(type="text" name="weight" id="weight")
+            label(for="height") Height:
+            input(type="text" name="height" id="height")
+            input(type="submit" value="Submit")
+        
+        a(href="/") Return to the homepage

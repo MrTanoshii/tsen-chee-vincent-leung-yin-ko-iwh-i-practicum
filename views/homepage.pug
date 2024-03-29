@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Object Table
+
+
+        a(href="/update-cobj") Add/Update this table
+
+        table 
+            tr
+                th Name
+                th Weight
+                th Height
+            each pokemon in data
+                tr
+                    td #{pokemon.properties.name}
+                    td #{pokemon.properties.weight}
+                    td #{pokemon.properties.height}
